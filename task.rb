@@ -76,13 +76,16 @@ def q8
   programming_languages = %w(ruby php python javascript)
 
   # 以下に回答を記載
+  upper_case_programming = %w(ruby php python javascript)
+
   programming_languages = programming_languages.map {|item| item.capitalize}
-  programming_languages = upper_case_programming_languages.map {|item| item.upcase}
+  
+  upper_case_programming = upper_case_programming.map {|item| item.upcase}
 
 
   # 以下は変更しないで下さい
   p programming_languages 
-  p upper_case_programming_languages
+  p upper_case_programming
 end
 
 def q9
