@@ -100,9 +100,9 @@ def q10
   # 以下に回答を記載
   foods.each do |food|
     if food.include?("うに")
-      puts "#{food}"  "好物です"
+      puts "#{food} 好物です"
     else
-      puts "#{food}"  "まぁまぁ好きです"
+      puts "#{food} まぁまぁ好きです"
     end
   end
 
@@ -115,7 +115,7 @@ def q11
   # 以下に回答を記載
   sports.flatten!.uniq!
   sports.each.with_index(1) do |sport,i|
-    puts "No.#{i}" "#{sport}"
+    puts "No.#{i} #{sport}"
   end
 
 end
@@ -133,6 +133,8 @@ def q13
   update_data = { age: 32, address: "沖縄" }
 
   # 以下に回答を記載
+user_data.merge!(update_data)
+puts user_data
 
 end
 
@@ -140,6 +142,8 @@ def q14
   data = { name: "satou", age: 33, address: "saitama", hobby: "soccer", email: "hoge@fuga.com" }
 
   # 以下に回答を記載
+  array = data.keys
+  puts array
 
 end
 
@@ -147,7 +151,9 @@ def q15
   data1 = { name: "saitou", hobby: "soccer", age: 33, role: "admin" }
   data2 = { name: "yamada", hobby: "baseball", role: "normal" }
 
+
   # 以下に回答を記載
+
 
 end
 
@@ -160,6 +166,7 @@ def q16
   ]
 
   # 以下に回答を記載
+  
 
 end
 
