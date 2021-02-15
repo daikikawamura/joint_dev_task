@@ -153,6 +153,16 @@ def q15
 
 
   # 以下に回答を記載
+  if data1.include?(:age)
+    puts "OK"
+  else
+    puts "NG"
+  end
+  if data2.include?(:age)
+    puts "OK"
+  else
+    puts "NG"
+  end
 
 
 end
@@ -162,10 +172,15 @@ def q16
     { name: "satou", age: 22 },
     { name: "yamada", age: 12 },
     { name: "takahashi", age: 32 },
-    { name: "nakamura", age: 41 }
+    { name: "nakamura", age: 41 } 
   ]
 
   # 以下に回答を記載
+  users.each {
+    |user|
+    puts "私の名前は#{user[:name]}です。年齢は#{user[:age]}です."
+  }
+
   
 
 end
